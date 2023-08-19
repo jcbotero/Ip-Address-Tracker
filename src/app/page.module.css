@@ -1,0 +1,76 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.header {
+  background-image: url("/pattern-bg-desktop.png");
+  min-width: 100vw;
+  min-height: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  color: hsl(0, 9%, 98%);
+  font-weight: 700;
+  margin: -2% 0% 3% 0%;
+  font-size: 33px;
+}
+
+.header input {
+  width: 38vw;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 15px;
+  border-style: none;
+  padding: 4.5%;
+  margin-left: 0%;
+}
+
+.header input:hover,.header button:hover {
+  cursor: url("/pointer.png"), auto;
+}
+
+.header button {
+  background-image: url("/icon-arrow.svg");
+  background-size: 25%;
+  background-position: 50%; /* buen codigo para ubicar una imagen dentro de un boton y poscionarla */
+  background-repeat: no-repeat;
+  height: 35px;
+  padding: 1.7%;
+  background-color: black;
+  width: 3.3vw;
+  border-radius: 5px 15px 15px 5px; /* para darle forma a una esquina del boton*/
+  margin: -0.22% 0% 0% -3%;
+  position: absolute;
+  
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+ 
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    max-width: 320px;
+    text-align: center;
+  }
+
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
